@@ -1,0 +1,18 @@
+{
+    "manifest_version":2,
+    "name": "Youtube Unbiased",
+    "description": "Tired of being swayed by other people's opinions on Youtube? Youtube Unbiased will help solve that problem.",
+    "version": "1.0.0",
+    "browser_action" : {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "run_at": "document_end",
+            "js": ["script.js"]
+        }
+    ],
+    "permissions": []
+}
