@@ -1,4 +1,4 @@
-# The Youtube Unbiased
+# Youtube Unbiased
 A simple app that allows users to watch youtube videos without their opinions being swayed by other sentiments.  
   
 # Why I made it  
