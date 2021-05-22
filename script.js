@@ -29,7 +29,14 @@ function handleRemoveDetails() {
             }
         });
     }
-
+    // like/dislike details for active button
+    if (document.getElementsByClassName('style-scope ytd-toggle-button-renderer style-default-active')) {
+        Array.from(document.getElementsByClassName('style-scope ytd-toggle-button-renderer style-default-active')).forEach(function(item) {
+            if (item.id === 'text') {
+                item.remove();
+            }
+        });
+    }
     // video metadata from suggestions
     if (document.getElementsByClassName('style-scope ytd-video-meta-block')) {
         Array.from(document.getElementsByClassName('style-scope ytd-video-meta-block')).forEach(function(item) {
